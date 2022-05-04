@@ -90,8 +90,8 @@ window.onload = function() {
         'a',
         'b',
         'c',
-        'a',
-        
+        'a'
+
 
 
     ]);
