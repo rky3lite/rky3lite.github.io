@@ -88,7 +88,12 @@ window.onload = function() {
         'a',
         'a',
         'a',
-        'a'
+        'b',
+        'c',
+        'a',
+        
+
+
     ]);
 };
 
