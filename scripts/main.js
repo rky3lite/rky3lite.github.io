@@ -95,7 +95,10 @@ window.onload = function() {
         'a',
         'b',
         'a',
+        'b',
+        'b',
         'b'
+
 
 
 
