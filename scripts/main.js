@@ -81,23 +81,24 @@ function handleAnswers(quiz, question, no, correct) {
 
 window.onload = function() {
     quiz = new Quiz('quiz', [
-        'a',
-        'a',
-        'a',
-        'a',
-        'a',
-        'a',
-        'a',
+        'a', // q1
+        'a', // q2
+        'a', // q3
+        'a', // q4
+        'a', // q5
+        'a', // q6
+        'a', // q7
+        'b', // q8
+        'c', // q9
+        'a', // q10
+        'a', // q11
+        'a', // q12
+        'b', // q13
+        'a', // q14
+        'b', //q15
+        'b', // q16
         'b',
-        'c',
-        'a',
-        'a',
-        'a',
-        'b',
-        'a',
-        'b',
-        'b',
-        'b'
+        'a'
 
 
 
