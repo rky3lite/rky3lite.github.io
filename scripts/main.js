@@ -98,7 +98,14 @@ window.onload = function() {
         'b', //q15
         'b', // q16
         'b',
-        'a'
+        'a',
+        'a',
+        'b',
+        'b',
+        'a',
+        'c',
+        'b'
+
 
 
 
