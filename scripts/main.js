@@ -3,8 +3,7 @@
 */
 
 var quiz;
-// this is a test 
-//this is a test part 2 
+
 
     
 
@@ -13,6 +12,8 @@ function showResults() {
     if (quiz.checkAnswers()) {
         var quizScorePercent = quiz.result.scorePercentFormatted; // The unformatted percentage is a decimal in range 0 - 1
         var quizResultElement = document.getElementById('quiz-result');
+        quiz.highlightResults(handleAnswers); // try this 
+
 
         var skill;
         var lessonLevel;
@@ -50,7 +51,6 @@ function showResults() {
         
         
         // Highlight questions according to whether they were correctly answered. The callback allows us to highlight/show the correct answer
-        quiz.highlightResults(handleAnswers);
     }
 }
 
@@ -105,11 +105,58 @@ window.onload = function() {
         'a',
         'c',
         'b'
-
-
-
-
-
     ]);
 };
+
+document.getElementsByClassName('card')[0].style.display = "block";
+
+function next(id) {
+    document.getElementsByClassName('card')[id-1].style.display = "none";
+    document.getElementsByClassName('card')[id].style.display = "block";
+}
+
+function prev(id) {
+    document.getElementsByClassName('card')[id-1].style.display = "block";
+    document.getElementsByClassName('card')[id].style.display = "none";
+}
+
+function reveal() {
+    document.getElementsByClassName('card')[0].style.display = "block";
+    document.getElementsByClassName('card')[1].style.display = "block";
+    document.getElementsByClassName('card')[2].style.display = "block";
+    document.getElementsByClassName('card')[3].style.display = "block";
+    document.getElementsByClassName('card')[4].style.display = "block";
+    document.getElementsByClassName('card')[5].style.display = "block";
+    document.getElementsByClassName('card')[6].style.display = "block";
+    document.getElementsByClassName('card')[7].style.display = "block";
+    document.getElementsByClassName('card')[8].style.display = "block";
+    document.getElementsByClassName('card')[9].style.display = "block";
+    document.getElementsByClassName('card')[10].style.display = "block";
+    document.getElementsByClassName('card')[11].style.display = "block";
+    document.getElementsByClassName('card')[12].style.display = "block";
+    document.getElementsByClassName('card')[13].style.display = "block";
+    document.getElementsByClassName('card')[14].style.display = "block";
+    document.getElementsByClassName('card')[15].style.display = "block";
+    document.getElementsByClassName('card')[16].style.display = "block";
+    document.getElementsByClassName('card')[17].style.display = "block";
+    document.getElementsByClassName('card')[18].style.display = "block";
+    document.getElementsByClassName('card')[19].style.display = "block";
+    document.getElementsByClassName('card')[20].style.display = "block";
+    document.getElementsByClassName('card')[21].style.display = "block";
+    document.getElementsByClassName('card')[22].style.display = "block";
+    document.getElementsByClassName('card')[23].style.display = "block";
+    document.getElementsByClassName('card')[24].style.display = "block";
+
+
+
+
+
+
+
+
+    
+
+
+}
+
 
