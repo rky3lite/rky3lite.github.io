@@ -24,10 +24,10 @@ function showResults() {
         else if (quizScorePercent >= 25) skill = ('2');
         else if (quizScorePercent >= 0)  skill = ('1');
 
-        if (quizScorePercent >= 75) lessonLevel = ('<a href = "https://www.youtube.com" target = "blank" > this video </a>');
-        else if (quizScorePercent >= 50) lessonLevel = ('<a href = "https://twitter.com/" target = "blank" > this video </a>');
-        else if (quizScorePercent >= 25) lessonLevel = ('<a href = "https://www.google.com/" target = "blank" > this video </a>');
-        else if (quizScorePercent >= 0)  lessonLevel = ('<a href = "https://tinyurl.com/yc75d2ph" target = "blank" > this video </a>');
+        if (quizScorePercent >= 75) lessonLevel = ('<a href = "Level 4.html" target = "blank" > the Level 4 curriculum </a>');
+        else if (quizScorePercent >= 50) lessonLevel = ('<a href = "Level 3.html" target = "blank" > the Level 3 curriculum </a>');
+        else if (quizScorePercent >= 25) lessonLevel = ('<a href = "Level 2.html" target = "blank" > the Level 2 curriculum </a>');
+        else if (quizScorePercent >= 0)  lessonLevel = ('<a href = "Level 1.html" target = "blank" > the Level 1 curriculum </a>');
 
 
         quizResultElement.style.display = 'block';
@@ -35,7 +35,7 @@ function showResults() {
         document.getElementById('quiz-max-score').innerHTML = quiz.result.totalQuestions.toString();
         document.getElementById('quiz-percent').innerHTML = quizScorePercent.toString();
         document.getElementById('skill-level').innerHTML = "Your skill level is " + skill.toString();
-        document.getElementById('lessons').innerHTML = 'Given your progress, you should go to' + lessonLevel; 
+        document.getElementById('lessons').innerHTML = 'Given your understanding, you should go to' + lessonLevel; 
         
 
         // Change background colour of results div according to score percent
