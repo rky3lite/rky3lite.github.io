@@ -12,6 +12,7 @@ function showResults() {
     if (quiz.checkAnswers()) {
         var quizScorePercent = quiz.result.scorePercentFormatted; // The unformatted percentage is a decimal in range 0 - 1
         var quizResultElement = document.getElementById('quiz-result');
+        var skillRubric = document.getElementById('student-rubric');
         quiz.highlightResults(handleAnswers); // try this 
 
 
@@ -31,6 +32,7 @@ function showResults() {
 
 
         quizResultElement.style.display = 'block';
+        skillRubric.style.display = 'block';
         document.getElementById('quiz-score').innerHTML = quiz.result.score.toString();
         document.getElementById('quiz-max-score').innerHTML = quiz.result.totalQuestions.toString();
         document.getElementById('quiz-percent').innerHTML = quizScorePercent.toString();
